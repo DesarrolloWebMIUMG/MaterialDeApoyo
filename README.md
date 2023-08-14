@@ -1,15 +1,15 @@
-#Repositorio de Material de Apoyo para el Curso de Desarrollo Web
+# Repositorio de Material de Apoyo para el Curso de Desarrollo Web
 
-##¡Bienvenido al repositorio de material de apoyo para el curso de Desarrollo Web! 
+## ¡Bienvenido al repositorio de material de apoyo para el curso de Desarrollo Web! 
 Aquí encontrarás una variedad de recursos diseñados para ayudarte con el aprendizaje.
 
-##Objetivo Principal
+## Objetivo Principal
 El objetivo principal de este repositorio es proporcionar un conjunto completo de recursos que te permitan ampliar tus conocimientos y habilidades en el Desarrollo Web. 
 
 Navegación en el Repositorio
 El repositorio está organizado en carpetas que corresponden a diferentes proyectos que busca fortalecer y complementar el contenido del curso de Desarrollo Web.
 
-##Cómo Utilizar Este Repositorio
+## Cómo Utilizar Este Repositorio
 Clona o descarga el repositorio a tu propia máquina para acceder a los recursos de manera local.
 
 Explora las carpetas relevantes según los temas que estés estudiando en el curso.
