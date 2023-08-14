@@ -1,4 +1,4 @@
-# Repositorio de Material de Apoyo para el Curso de Desarrollo Web
+# Material de Apoyo para el Curso de Desarrollo Web
 
 ## ¡Bienvenido al repositorio de material de apoyo para el curso de Desarrollo Web! 
 Aquí encontrarás una variedad de recursos diseñados para ayudarte con el aprendizaje.
