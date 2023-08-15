@@ -1,21 +1,21 @@
 # Material de Apoyo para el Curso de Desarrollo Web
 
 ## ¡Bienvenido al repositorio de material de apoyo para el curso de Desarrollo Web! 
-Aquí encontrarás una variedad de recursos diseñados para ayudarte con el aprendizaje.
+Aquí encontrara una variedad de recursos diseñados para complementar el aprendizaje.
 
 ## Objetivo Principal
-El objetivo principal de este repositorio es proporcionar un conjunto completo de recursos que te permitan ampliar tus conocimientos y habilidades en el Desarrollo Web. 
+El objetivo principal de este repositorio es proporcionar un conjunto completo de recursos que ampliará el conocimiento y fortalcerá habilidades en el Desarrollo Web. 
 
 Navegación en el Repositorio
-El repositorio está organizado en carpetas que corresponden a diferentes proyectos que busca fortalecer y complementar el contenido del curso de Desarrollo Web.
+El repositorio está organizado en carpetas que corresponden a diferentes proyectos que buscan fortalecer y complementar el contenido del curso de Desarrollo Web.
 
 ## Cómo Utilizar Este Repositorio
-Clona o descarga el repositorio a tu propia máquina para acceder a los recursos de manera local.
+Clone o descargue el repositorio a su máquina para acceder a los recursos de manera local.
 
-Explora las carpetas relevantes según los temas que estés estudiando en el curso.
+Explore las carpetas relevantes según los temas que estés estudiando en el curso.
 
-Utiliza los tutoriales y códigos de ejemplo como guía para implementar tus propios proyectos.
+Utilice los tutoriales y códigos de ejemplo como guía para implementar sus propios proyectos.
 
-Complementa tu aprendizaje con los recursos externos recomendados para obtener una comprensión más profunda de los conceptos.
+Complemente el aprendizaje con los recursos externos recomendados para obtener una comprensión más profunda de los conceptos.
 
-Esperamos que este repositorio te ayude en tu viaje de aprendizaje en el desarrollo web. ¡¡Mucho éxito en tu curso y desarrollo web en general!! 🚀🌐
+Espero que este repositorio le ayude en tu viaje de aprendizaje en el desarrollo web.

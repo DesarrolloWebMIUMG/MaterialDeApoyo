@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "El siguiente proyecto busca facilitar la estructura de una API básica ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Desarrollo Web",
+  "license": "ISC"
+}
