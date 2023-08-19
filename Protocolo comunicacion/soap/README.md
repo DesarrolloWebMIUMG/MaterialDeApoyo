@@ -1,21 +1,8 @@
-# Material de Apoyo para el Curso de Desarrollo Web
+## Ejemplo SOAP
+El siguiente ejemplo tiene como objetivo ejemplificar el consumo del servicio SOAP https://banguat.gob.gt/variables/ws/TipoCambio.asmx?op=TipoCambioDia.
 
-## ¡Bienvenido al repositorio de material de apoyo para el curso de Desarrollo Web! 
-Aquí encontrara una variedad de recursos diseñados para complementar el aprendizaje.
+1. Instala las dependencias ejecutando el siguiente comando: `npm install express soap`.
+2. Ejecuta el archivo del servidor RPC utilizando el comando: `node index.js`.
+4. Visualiza la página accediendo a la siguiente URL: http://127.0.0.1:3000/.
 
-## Objetivo Principal
-El objetivo principal de este repositorio es proporcionar un conjunto completo de recursos que ampliará el conocimiento y fortalcerá habilidades en el Desarrollo Web. 
-
-Navegación en el Repositorio
-El repositorio está organizado en carpetas que corresponden a diferentes proyectos que buscan fortalecer y complementar el contenido del curso de Desarrollo Web.
-
-## Cómo Utilizar Este Repositorio
-Clone o descargue el repositorio a su máquina para acceder a los recursos de manera local.
-
-Explore las carpetas relevantes según los temas que estés estudiando en el curso.
-
-Utilice los tutoriales y códigos de ejemplo como guía para implementar sus propios proyectos.
-
-Complemente el aprendizaje con los recursos externos recomendados para obtener una comprensión más profunda de los conceptos.
-
-Espero que este repositorio le ayude en tu viaje de aprendizaje en el desarrollo web.
+Este ejemplo te proporcionará una idea de cómo consumir un servicio SOAP utilizando Express. Asegúrate de haber configurado correctamente las dependencias.

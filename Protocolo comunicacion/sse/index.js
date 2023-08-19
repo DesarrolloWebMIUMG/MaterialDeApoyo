@@ -1,6 +1,6 @@
 const express = require('express');
 const http = require('http');
-const path = require('path');  // Añadir el módulo 'path' para manejar rutas de archivos
+const path = require('path'); 
 
 const app = express();
 const server = http.createServer(app);

@@ -1,21 +1,8 @@
-# Material de Apoyo para el Curso de Desarrollo Web
+## Ejemplo de Uso de Sistemas de Colas
+El siguiente ejemplo tiene como objetivo demostrar el uso de sistemas de colas utilizando RabbitMQ.
 
-## ¡Bienvenido al repositorio de material de apoyo para el curso de Desarrollo Web! 
-Aquí encontrara una variedad de recursos diseñados para complementar el aprendizaje.
+1. Instala las dependencias ejecutando el siguiente comando: `npm install amqplib ejs express`.
+2. Ejecuta el archivo principal utilizando el comando: `node index.js`.
+3. Visualiza la página accediendo a la siguiente URL: http://127.0.0.1:3000/.
 
-## Objetivo Principal
-El objetivo principal de este repositorio es proporcionar un conjunto completo de recursos que ampliará el conocimiento y fortalcerá habilidades en el Desarrollo Web. 
-
-Navegación en el Repositorio
-El repositorio está organizado en carpetas que corresponden a diferentes proyectos que buscan fortalecer y complementar el contenido del curso de Desarrollo Web.
-
-## Cómo Utilizar Este Repositorio
-Clone o descargue el repositorio a su máquina para acceder a los recursos de manera local.
-
-Explore las carpetas relevantes según los temas que estés estudiando en el curso.
-
-Utilice los tutoriales y códigos de ejemplo como guía para implementar sus propios proyectos.
-
-Complemente el aprendizaje con los recursos externos recomendados para obtener una comprensión más profunda de los conceptos.
-
-Espero que este repositorio le ayude en tu viaje de aprendizaje en el desarrollo web.
+Este ejemplo te proporcionará una idea de cómo implementar sistemas de colas utilizando RabbitMQ y cómo interactuar con ellos a través de una aplicación Node.js. Asegúrate de haber configurado correctamente las dependencias y de tener RabbitMQ en funcionamiento para que puedas observar el funcionamiento del ejemplo en tu navegador.
