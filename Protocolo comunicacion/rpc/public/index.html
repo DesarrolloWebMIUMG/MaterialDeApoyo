@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invocar Reinicio de Servicios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Invocar Reinicio de Servicios</h1>
+        
+        <button id="reiniciarNginxBtn" class="btn btn-primary">Reiniciar NGINX</button>
+        <button id="reiniciarDockerBtn" class="btn btn-primary">Reiniciar Docker</button>
+        <button id="reiniciarAmbosBtn" class="btn btn-primary">Reiniciar Ambos Servicios</button>
+    </div>
+    
+    <div class="modal fade" id="mensajeModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Resultado del Reinicio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="resultadoMensaje"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        var reiniciarNginxBtn = document.getElementById('reiniciarNginxBtn');
+        var reiniciarDockerBtn = document.getElementById('reiniciarDockerBtn');
+        var reiniciarAmbosBtn = document.getElementById('reiniciarAmbosBtn');
+        var resultadoMensaje = document.getElementById('resultadoMensaje');
+        
+        reiniciarNginxBtn.addEventListener('click', function() {
+            invocarReinicio('nginx');
+        });
+        
+        reiniciarDockerBtn.addEventListener('click', function() {
+            invocarReinicio('docker');
+        });
+        
+        reiniciarAmbosBtn.addEventListener('click', function() {
+            invocarReinicio('ambos');
+        });
+        
+        function invocarReinicio(servicio) {
+            fetch(`/reiniciar/${servicio}`)
+                .then(response => response.text())
+                .then(result => {
+                    resultadoMensaje.textContent = result;
+                    $('#mensajeModal').modal('show');
+                })
+                .catch(error => {
+                    resultadoMensaje.textContent = 'Error al reiniciar servicios.';
+                    $('#mensajeModal').modal('show');
+                });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Votación</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6882ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+        #voting-chart {
+            width: 800px;
+            height: 1000px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 200px) {
+            #voting-chart {
+                width: 100px;
+                height: 400px;
+                margin-top: 10px;
+            }
+
+            h1 {
+                text-align: center;
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (min-width: 201px) and (max-width: 500px) {
+            #voting-chart {
+                width: 200px;
+                height: 600px;
+                margin-top: 15px;
+            }
+            
+            h1 {
+                text-align: center;
+                color: #fff;
+                font-size: 30px;
+            }
+        }
+
+        @media screen and (min-width: 501px) and (max-width: 800px) {
+            #voting-chart {
+                width: 500px;
+                height: 1000px;
+                margin-top: 15px;
+            }
+            
+            h1 {
+                text-align: center;
+                color: #fff;
+                font-size: 50px;
+            }
+        }
+
+        @media screen and (min-width: 801px) {
+            #voting-chart {
+                width: 800px;
+                height: 1600px;
+                margin-top: 20px;
+            }
+
+            h1 {
+                text-align: center;
+                color: #fff;
+                font-size: 70px;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Votación</h1>
+        <canvas id="voting-chart"></canvas>
+    </div>
+
+    <script>
+        const votingChart = new Chart(document.getElementById('voting-chart'), {
+            type: 'bar',
+            data: {
+                labels: ['Candidato A', 'Candidato B'],
+                datasets: [{
+                    data: [0, 0],
+                    backgroundColor: ['#ffff53', '#00e600'],
+                    label: 'Votación',
+                borderWidth: 1,
+                hoverBorderColor: "white",
+                scaleStepWidth: 1,
+                  data: [4, 5]
+           
+                }]
+            },
+            options: {
+            responsive: true,
+            scales: {
+            y: {
+                ticks: { color: 'white', beginAtZero: true }
+            },
+            x: {
+                ticks: { color: 'white', beginAtZero: true }
+            }
+            }
+        }
+        });
+
+        const eventSource = new EventSource('/votes');
+
+        eventSource.onmessage = (event) => {
+            const voteData = JSON.parse(event.data);
+            updateChart(voteData);
+        };
+
+        function updateChart(voteData) {
+            votingChart.data.datasets[0].data = [voteData.candidateA, voteData.candidateB];
+            votingChart.update();
+        }
+    </script>
+</body>
+</html>
