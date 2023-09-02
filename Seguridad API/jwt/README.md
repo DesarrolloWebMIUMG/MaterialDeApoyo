@@ -7,15 +7,15 @@ El siguiente ejemplo tiene como objetivo demostrar el uso JWT en una API.
 
 Este ejemplo te proporcionará una idea de cómo implementar una API utilizando NodeJs y JWT. Asegúrate de haber configurado correctamente las dependencias y de tener RabbitMQ en funcionamiento para que puedas observar el funcionamiento del ejemplo en tu navegador.
 
-##Login
+## Login
 URL:       http://localhost:3000/login
-Metodo:    POST
-Cuerpo:    {"username": "admin", "password": "admin" }
+<br/> Metodo:    POST
+<br/> Cuerpo:    {"username": "admin", "password": "admin" }
 Respuesta: { "token": ..... }
 
-##Obtener Data
+## Obtener Data
 header:    authorization: "token...."
-URL:       http://localhost:3000/data
-Metodo:    GET
-Cuerpo:    
-Respuesta: { "data": ..... }
+<br/> URL:       http://localhost:3000/data
+<br/> Metodo:    GET
+<br/> Cuerpo:    
+<br/> Respuesta: { "data": ..... }
