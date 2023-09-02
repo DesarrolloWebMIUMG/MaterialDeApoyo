@@ -4,3 +4,8 @@ Protocolo comunicacion/rpc/node_modules
 Protocolo comunicacion/sse/node_modules
 Protocolo comunicacion/rest/node_modules
 Protocolo comunicacion/soap/node_modules
+Base de Datos/ORM/node_modules
+Base de Datos/MongoDB/node_modules
+Seguridad API/2FA/node_modules
+Seguridad API/jwt/node_modules
+Seguridad API/Oauth/node_modules
