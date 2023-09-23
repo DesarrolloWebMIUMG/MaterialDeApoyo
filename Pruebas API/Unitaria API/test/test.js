@@ -4,7 +4,7 @@ const app = require('../index');
 const mongoose = require('mongoose');
 
 beforeAll(async () => {
-    await mongoose.connect('mongodb+srv://Usuario:Password@cluster0.wrnv60d.mongodb.net/proyectotest', {
+    await mongoose.connect('mongodb+srv://sk8miguelvillatoro:Seguridad1_@cluster0.wrnv60d.mongodb.net/proyecto', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

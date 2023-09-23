@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 const app = express();
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://Usuario:Password@cluster0.wrnv60d.mongodb.net/proyecto', {
+mongoose.connect('mongodb+srv://sk8miguelvillatoro:Seguridad1_@cluster0.wrnv60d.mongodb.net/proyecto', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

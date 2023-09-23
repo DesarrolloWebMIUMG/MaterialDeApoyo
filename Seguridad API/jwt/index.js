@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app       = express();
 const port      = 3000;
 const secretKey = 'desarrolloweb';
-const Segundos  = 30;
+const Segundos  = 60;
 app.use(bodyParser.json());
 
 
